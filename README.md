@@ -1,4 +1,4 @@
-# 🚀 NetBox Inventory Sync
+# 🚀 Sincronismo de Inventário - NetBox
 
 > Sincronização automática entre um banco de dados CSV e o NetBox, garantindo consistência completa do inventário.
 
