@@ -230,7 +230,7 @@ H -- Não --> H1[Cria Interface MGMT] --> I
 I -- Sim --> J[Define Primary IP]
 I -- Não --> I1[Cria IPv4] --> J
 
-R --> S[Fim]
+J --> K[Fim]
 ```
 ---
 ## ⚙️ Pré-requisitos
