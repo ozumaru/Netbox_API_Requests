@@ -5,59 +5,59 @@ SP-MT-SWD-01,10.0.1.1/24,Matriz,Sao Paulo,Cisco Catalyst 9300,Cisco,Switch Distr
 SP-MT-SWD-02,10.0.1.2/24,Matriz,Sao Paulo,Cisco Catalyst 9300,Cisco,Switch Distribuicao,000dff,FCW9300SP02
 SP-A1-SWA-01,10.0.2.1/24,Andar 1,Sao Paulo,Cisco Catalyst 9200,Cisco,Switch Acesso,00ff11,FOC9200SP01
 SP-A2-SWA-02,10.0.2.2/24,Andar 2,Sao Paulo,Cisco Catalyst 9200,Cisco,Switch Acesso,00ff11,FOC9200SP02
-SP-DC-FW-01,10.0.10.1/24,Datacenter,Sao Paulo,Fortigate 200F,Fortinet,Firewall,7d3800,FGT200FSP01
+SP-DC-FW-01,10.0.10.1/24,Datacenter,Sao Paulo,Fortinet Fortigate 200F,Fortinet,Firewall,7d3800,FGT200FSP01
 SP-ESC-AP-01,10.0.20.1/24,Escritorio,Sao Paulo,Cisco Aironet 1832i,Cisco,Access Point,7600ff,AIR1832SP01
 RJ-DC-SWC-01,10.1.0.1/24,Datacenter,Rio de Janeiro,Cisco Catalyst 9500,Cisco,Switch CORE,ff0000,FTX9500RJ01
 RJ-FC-SWD-01,10.1.1.1/24,Filial Centro,Rio de Janeiro,Cisco Catalyst 9300,Cisco,Switch Distribuicao,000dff,FCW9300RJ01
 RJ-A3-SWA-01,10.1.2.1/24,Andar 3,Rio de Janeiro,Cisco Catalyst 9200,Cisco,Switch Acesso,00ff11,FOC9200RJ01
-RJ-FC-FW-01,10.1.10.1/24,Filial Centro,Rio de Janeiro,Fortigate 100F,Fortinet,Firewall,7d3800,FGT100FRJ01
+RJ-FC-FW-01,10.1.10.1/24,Filial Centro,Rio de Janeiro,Fortinet Fortigate 100F,Fortinet,Firewall,7d3800,FGT100FRJ01
 RJ-REC-AP-01,10.1.20.1/24,Recepcao,Rio de Janeiro,Ubiquiti UAP-AC-PRO,Ubiquiti,Access Point,7600ff,UAPACPRORJ01
 MG-DC-SWC-01,10.2.0.1/24,Datacenter,Belo Horizonte,Cisco Catalyst 9500,Cisco,Switch CORE,ff0000,FTX9500MG01
 MG-FS-SWD-01,10.2.1.1/24,Filial Savassi,Belo Horizonte,Cisco Catalyst 9300,Cisco,Switch Distribuicao,000dff,FCW9300MG01
 MG-A1-SWA-01,10.2.2.1/24,Andar 1,Belo Horizonte,Cisco Catalyst 9200,Cisco,Switch Acesso,00ff11,FOC9200MG01
-MG-FS-FW-01,10.2.10.1/24,Filial Savassi,Belo Horizonte,Fortigate 100F,Fortinet,Firewall,7d3800,FGT100FMG01
+MG-FS-FW-01,10.2.10.1/24,Filial Savassi,Belo Horizonte,Fortinet Fortigate 100F,Fortinet,Firewall,7d3800,FGT100FMG01
 MG-ESC-AP-01,10.2.20.1/24,Escritorio,Belo Horizonte,Cisco Aironet 1852i,Cisco,Access Point,7600ff,AIR1852MG01
 DF-DC-SWC-01,10.3.0.1/24,Datacenter,Brasilia,Cisco Catalyst 9500,Cisco,Switch CORE,ff0000,FTX9500DF01
 DF-FAS-SWD-01,10.3.1.1/24,Filial Asa Sul,Brasilia,Cisco Catalyst 9300,Cisco,Switch Distribuicao,000dff,FCW9300DF01
 DF-A2-SWA-01,10.3.2.1/24,Andar 2,Brasilia,Cisco Catalyst 9200,Cisco,Switch Acesso,00ff11,FOC9200DF01
-DF-FAS-FW-01,10.3.10.1/24,Filial Asa Sul,Brasilia,Fortigate 200F,Fortinet,Firewall,7d3800,FGT200FDF01
+DF-FAS-FW-01,10.3.10.1/24,Filial Asa Sul,Brasilia,Fortinet Fortigate 200F,Fortinet,Firewall,7d3800,FGT200FDF01
 DF-REC-AP-01,10.3.20.1/24,Recepcao,Brasilia,Ubiquiti UAP-AC-LR,Ubiquiti,Access Point,7600ff,UAPACLRDF01
 PR-DC-SWC-01,10.4.0.1/24,Datacenter,Curitiba,Cisco Catalyst 9500,Cisco,Switch CORE,ff0000,FTX9500PR01
 PR-FB-SWD-01,10.4.1.1/24,Filial Batel,Curitiba,Cisco Catalyst 9300,Cisco,Switch Distribuicao,000dff,FCW9300PR01
 PR-A1-SWA-01,10.4.2.1/24,Andar 1,Curitiba,Cisco Catalyst 9200,Cisco,Switch Acesso,00ff11,FOC9200PR01
-PR-FB-FW-01,10.4.10.1/24,Filial Batel,Curitiba,Fortigate 100F,Fortinet,Firewall,7d3800,FGT100FPR01
+PR-FB-FW-01,10.4.10.1/24,Filial Batel,Curitiba,Fortinet Fortigate 100F,Fortinet,Firewall,7d3800,FGT100FPR01
 PR-ESC-AP-01,10.4.20.1/24,Escritorio,Curitiba,Cisco Aironet 1832i,Cisco,Access Point,7600ff,AIR1832PR01
 RS-A1-SWA-01,10.5.2.1/24,Andar 1,Porto Alegre,Cisco Catalyst 9200,Cisco,Switch Acesso,00ff11,FOC9200RS01
-RS-FC-FW-01,10.5.10.1/24,Filial Centro,Porto Alegre,Fortigate 100F,Fortinet,Firewall,7d3800,FGT100FRS01 
+RS-FC-FW-01,10.5.10.1/24,Filial Centro,Porto Alegre,Fortinet Fortigate 100F,Fortinet,Firewall,7d3800,FGT100FRS01 
 BA-DC-SWC-01,10.6.0.1/24,Datacenter,Salvador,Cisco Catalyst 9500,Cisco,Switch CORE,ff0000,FTX9500BA01
 BA-FC-SWD-01,10.6.1.1/24,Filial Centro,Salvador,Cisco Catalyst 9300,Cisco,Switch Distribuicao,000dff,FCW9300BA01
 BA-A1-SWA-01,10.6.2.1/24,Andar 1,Salvador,Cisco Catalyst 9200,Cisco,Switch Acesso,00ff11,FOC9200BA01
-BA-FC-FW-01,10.6.10.1/24,Filial Centro,Salvador,Fortigate 200F,Fortinet,Firewall,7d3800,FGT200FBA01
+BA-FC-FW-01,10.6.10.1/24,Filial Centro,Salvador,Fortinet Fortigate 200F,Fortinet,Firewall,7d3800,FGT200FBA01
 BA-ESC-AP-01,10.6.20.1/24,Escritorio,Salvador,Cisco Aironet 1852i,Cisco,Access Point,7600ff,AIR1852BA01
 SC-DC-SWC-01,10.7.0.1/24,Datacenter,Florianopolis,Cisco Catalyst 9500,Cisco,Switch CORE,ff0000,FTX9500SC01
 SC-FL-SWD-01,10.7.1.1/24,Filial Lagoa,Florianopolis,Cisco Catalyst 9300,Cisco,Switch Distribuicao,000dff,FCW9300SC01
 SC-A2-SWA-01,10.7.2.1/24,Andar 2,Florianopolis,Cisco Catalyst 9200,Cisco,Switch Acesso,00ff11,FOC9200SC01
-SC-FL-FW-01,10.7.10.1/24,Filial Lagoa,Florianopolis,Fortigate 100F,Fortinet,Firewall,7d3800,FGT100FSC01
+SC-FL-FW-01,10.7.10.1/24,Filial Lagoa,Florianopolis,Fortinet Fortigate 100F,Fortinet,Firewall,7d3800,FGT100FSC01
 SC-REC-AP-01,10.7.20.1/24,Recepcao,Florianopolis,Ubiquiti UAP-AC-LR,Ubiquiti,Access Point,7600ff,UAPACLRSC01
 GO-DC-SWC-01,10.8.0.1/24,Datacenter,Goiania,Cisco Catalyst 9500,Cisco,Switch CORE,ff0000,FTX9500GO01
 GO-FC-SWD-01,10.8.1.1/24,Filial Centro,Goiania,Cisco Catalyst 9300,Cisco,Switch Distribuicao,000dff,FCW9300GO01
 GO-A1-SWA-01,10.8.2.1/24,Andar 1,Goiania,Cisco Catalyst 9200,Cisco,Switch Acesso,00ff11,FOC9200GO01
-GO-FC-FW-01,10.8.10.1/24,Filial Centro,Goiania,Fortigate 200F,Fortinet,Firewall,7d3800,FGT200FGO01
+GO-FC-FW-01,10.8.10.1/24,Filial Centro,Goiania,Fortinet Fortigate 200F,Fortinet,Firewall,7d3800,FGT200FGO01
 GO-ESC-AP-01,10.8.20.1/24,Escritorio,Goiania,Cisco Aironet 1832i,Cisco,Access Point,7600ff,AIR1832GO01
 PE-DC-SWC-01,10.9.0.1/24,Datacenter,Recife,Cisco Catalyst 9500,Cisco,Switch CORE,ff0000,FTX9500PE01
 PE-FB-SWD-01,10.9.1.1/24,Filial Boa Viagem,Recife,Cisco Catalyst 9300,Cisco,Switch Distribuicao,000dff,FCW9300PE01
 PE-A3-SWA-01,10.9.2.1/24,Andar 3,Recife,Cisco Catalyst 9200,Cisco,Switch Acesso,00ff11,FOC9200PE01
-PE-FB-FW-01,10.9.10.1/24,Filial Boa Viagem,Recife,Fortigate 100F,Fortinet,Firewall,7d3800,FGT100FPE01
+PE-FB-FW-01,10.9.10.1/24,Filial Boa Viagem,Recife,Fortinet Fortigate 100F,Fortinet,Firewall,7d3800,FGT100FPE01
 PE-REC-AP-01,10.9.20.1/24,Recepcao,Recife,Ubiquiti UAP-AC-PRO,Ubiquiti,Access Point,7600ff,UAPACPROPE01
 CE-DC-SWC-01,10.10.0.1/24,Datacenter,Fortaleza,Cisco Catalyst 9500,Cisco,Switch CORE,ff0000,FTX9500CE01
 CE-FC-SWD-01,10.10.1.1/24,Filial Centro,Fortaleza,Cisco Catalyst 9300,Cisco,Switch Distribuicao,000dff,FCW9300CE01
 CE-A1-SWA-01,10.10.2.1/24,Andar 1,Fortaleza,Cisco Catalyst 9200,Cisco,Switch Acesso,00ff11,FOC9200CE01
-CE-FC-FW-01,10.10.10.1/24,Filial Centro,Fortaleza,Fortigate 200F,Fortinet,Firewall,7d3800,FGT200FCE01
+CE-FC-FW-01,10.10.10.1/24,Filial Centro,Fortaleza,Fortinet Fortigate 200F,Fortinet,Firewall,7d3800,FGT200FCE01
 CE-ESC-AP-01,10.10.20.1/24,Escritorio,Fortaleza,Cisco Aironet 1852i,Cisco,Access Point,7600ff,AIR1852CE01
 AM-DC-SWC-01,10.11.0.1/24,Datacenter,Manaus,Cisco Catalyst 9500,Cisco,Switch CORE,ff0000,FTX9500AM01
 AM-FI-SWD-01,10.11.1.1/24,Filial Industrial,Manaus,Cisco Catalyst 9300,Cisco,Switch Distribuicao,000dff,FCW9300AM01
 AM-A2-SWA-01,10.11.2.1/24,Andar 2,Manaus,Cisco Catalyst 9200,Cisco,Switch Acesso,00ff11,FOC9200AM01
-AM-FI-FW-01,10.11.10.1/24,Filial Industrial,Manaus,Fortigate 100F,Fortinet,Firewall,7d3800,FGT100FAM01
+AM-FI-FW-01,10.11.10.1/24,Filial Industrial,Manaus,Fortinet Fortigate 100F,Fortinet,Firewall,7d3800,FGT100FAM01
 AM-ESC-AP-01,10.11.20.1/24,Escritorio,Manaus,Ubiquiti UAP-AC-LR,Ubiquiti,Access Point,7600ff,UAPACLRAM01
 SP-WAN-RTR-01,10.12.0.1/24,Datacenter,Sao Paulo,Cisco Router ISR4451-X,Cisco,Router WAN,ff9900,CISR4451SP01
 SP-WAN-RTR-02,10.12.0.2/24,Datacenter,Sao Paulo,Cisco Router ISR4451-X,Cisco,Router WAN,ff9900,CISR4451SP02
@@ -78,17 +78,17 @@ RJ-FC-SWH-01,10.12.1.5/24,Filial Centro,Rio de Janeiro,Huawei Switch S5735-L24T4
 MG-DC-SWH-01,10.12.1.7/24,Datacenter,Belo Horizonte,Huawei Switch S6730-H48X6C,Huawei,Switch CORE,ff0000,HUA6730MG01
 MG-FS-SWH-01,10.12.1.8/24,Filial Savassi,Belo Horizonte,Huawei Switch S5735-L24T4X,Huawei,Switch Distribuicao,000dff,HUA5735MG01
 MG-A2-SWH-01,10.12.1.9/24,Andar 2,Belo Horizonte,Huawei Switch S5735-L48P4X,Huawei,Switch Acesso,00ff11,HUA5735MG02
-SP-ESC-FAP-01,10.12.2.1/24,Escritorio,Sao Paulo,Fortinet Access_Point FAP-231F,Fortinet,Access Point,7600ff,FAP231FSP01
-SP-ESC-FAP-02,10.12.2.2/24,Escritorio,Sao Paulo,Fortinet Access_Point FAP-431F,Fortinet,Access Point,7600ff,FAP431FSP01
-RJ-REC-FAP-01,10.12.2.3/24,Recepcao,Rio de Janeiro,Fortinet Access_Point FAP-231F,Fortinet,Access Point,7600ff,FAP231FRJ01
-RJ-REC-FAP-02,10.12.2.4/24,Recepcao,Rio de Janeiro,Fortinet Access_Point FAP-431F,Fortinet,Access Point,7600ff,FAP431FRJ01
-MG-ESC-FAP-01,10.12.2.5/24,Escritorio,Belo Horizonte,Fortinet Access_Point FAP-231F,Fortinet,Access Point,7600ff,FAP231FMG01
-MG-ESC-FAP-02,10.12.2.6/24,Escritorio,Belo Horizonte,Fortinet Access_Point FAP-431F,Fortinet,Access Point,7600ff,FAP431FMG01
-DF-REC-FAP-01,10.12.2.7/24,Recepcao,Brasilia,Fortinet Access_Point FAP-231F,Fortinet,Access Point,7600ff,FAP231FDF01
-DF-REC-FAP-02,10.12.2.8/24,Recepcao,Brasilia,Fortinet Access_Point FAP-431F,Fortinet,Access Point,7600ff,FAP431FDF01
-BA-ESC-FAP-01,10.12.2.9/24,Escritorio,Salvador,Fortinet Access_Point FAP-231F,Fortinet,Access Point,7600ff,FAP231FBA01
-BA-ESC-FAP-02,10.12.2.10/24,Escritorio,Salvador,Fortinet Access_Point FAP-431F,Fortinet,Access Point,7600ff,FAP431FBA01
-PR-ESC-FAP-01,10.12.2.11/24,Escritorio,Curitiba,Fortinet Access_Point FAP-231F,Fortinet,Access Point,7600ff,FAP231FPR01
-PR-ESC-FAP-02,10.12.2.12/24,Escritorio,Curitiba,Fortinet Access_Point FAP-431F,Fortinet,Access Point,7600ff,FAP431FPR01
-GO-ESC-FAP-01,10.12.2.13/24,Escritorio,Goiania,Fortinet Access_Point FAP-231F,Fortinet,Access Point,7600ff,FAP231FGO01
-GO-ESC-FAP-02,10.12.2.14/24,Escritorio,Goiania,Fortinet Access_Point FAP-431F,Fortinet,Access Point,7600ff,FAP431FGO01
+SP-ESC-FAP-01,10.12.2.1/24,Escritorio,Sao Paulo,Fortinet FortiAP FAP-231F,Fortinet,Access Point,7600ff,FAP231FSP01
+SP-ESC-FAP-02,10.12.2.2/24,Escritorio,Sao Paulo,Fortinet FortiAP FAP-431F,Fortinet,Access Point,7600ff,FAP431FSP01
+RJ-REC-FAP-01,10.12.2.3/24,Recepcao,Rio de Janeiro,Fortinet FortiAP FAP-231F,Fortinet,Access Point,7600ff,FAP231FRJ01
+RJ-REC-FAP-02,10.12.2.4/24,Recepcao,Rio de Janeiro,Fortinet FortiAP FAP-431F,Fortinet,Access Point,7600ff,FAP431FRJ01
+MG-ESC-FAP-01,10.12.2.5/24,Escritorio,Belo Horizonte,Fortinet FortiAP FAP-231F,Fortinet,Access Point,7600ff,FAP231FMG01
+MG-ESC-FAP-02,10.12.2.6/24,Escritorio,Belo Horizonte,Fortinet FortiAP FAP-431F,Fortinet,Access Point,7600ff,FAP431FMG01
+DF-REC-FAP-01,10.12.2.7/24,Recepcao,Brasilia,Fortinet FortiAP FAP-231F,Fortinet,Access Point,7600ff,FAP231FDF01
+DF-REC-FAP-02,10.12.2.8/24,Recepcao,Brasilia,Fortinet FortiAP FAP-431F,Fortinet,Access Point,7600ff,FAP431FDF01
+BA-ESC-FAP-01,10.12.2.9/24,Escritorio,Salvador,Fortinet FortiAP FAP-231F,Fortinet,Access Point,7600ff,FAP231FBA01
+BA-ESC-FAP-02,10.12.2.10/24,Escritorio,Salvador,Fortinet FortiAP FAP-431F,Fortinet,Access Point,7600ff,FAP431FBA01
+PR-ESC-FAP-01,10.12.2.11/24,Escritorio,Curitiba,Fortinet FortiAP FAP-231F,Fortinet,Access Point,7600ff,FAP231FPR01
+PR-ESC-FAP-02,10.12.2.12/24,Escritorio,Curitiba,Fortinet FortiAP FAP-431F,Fortinet,Access Point,7600ff,FAP431FPR01
+GO-ESC-FAP-01,10.12.2.13/24,Escritorio,Goiania,Fortinet FortiAP FAP-231F,Fortinet,Access Point,7600ff,FAP231FGO01
+GO-ESC-FAP-02,10.12.2.14/24,Escritorio,Goiania,Fortinet FortiAP FAP-431F,Fortinet,Access Point,7600ff,FAP431FGO01
