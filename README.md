@@ -157,23 +157,77 @@ C --> D[Coleta dados do NetBox]
 D --> D1[Manufacturers/Roles/Models/Sites/Locations/Devices/Interfaces/IPv4]
 
 C --> E[Carrega CSV db_devices.csv]
-
 E --> F[Extrai Dados do Banco]
 F --> F1[Manufacturers/Roles/Models/Sites/Locations/Devices/Hostname + IP]
 
 F --> G[Validação]
 
-G --> H[Valida Manufacturers]
-H --> I[Valida Roles]
-I --> J[Valida Models]
-J --> K[Valida Sites]
-K --> L[Valida Locations]
-L --> M[Valida Devices]
-M --> N[Valida Interface MGMT]
-N --> O[Valida IPv4 MGMT]
+%% =========================
+%% MANUFACTURERS
+%% =========================
+G --> H{Manufacturer Existe?}
+H -- Sim --> I[Próximo]
+H -- Não --> H1[Cria Manufacturer]
+H1 --> I
 
-O --> P[Fim]
-```
+%% =========================
+%% ROLES
+%% =========================
+I --> J{Role Existe?}
+J -- Sim --> K[Próximo]
+J -- Não --> J1[Cria Role]
+J1 --> K
+
+%% =========================
+%% MODELS
+%% =========================
+K --> L{Model Existe?}
+L -- Sim --> M[Próximo]
+L -- Não --> L1[Cria Model]
+L1 --> M
+
+%% =========================
+%% SITES
+%% =========================
+M --> N{Site Existe?}
+N -- Sim --> O[Próximo]
+N -- Não --> N1[Cria Site]
+N1 --> O
+
+%% =========================
+%% LOCATIONS
+%% =========================
+O --> P{Location Existe?}
+P -- Sim --> Q[Próximo]
+P -- Não --> P1[Cria Location]
+P1 --> Q
+
+%% =========================
+%% DEVICES
+%% =========================
+Q --> R{Device Existe?}
+R -- Sim --> S[Próximo]
+R -- Não --> R1[Cria Device]
+R1 --> S
+
+%% =========================
+%% INTERFACE MGMT
+%% =========================
+S --> T{Interface MGMT Existe?}
+T -- Sim --> U[Próximo]
+T -- Não --> T1[Cria Interface MGMT]
+T1 --> U
+
+%% =========================
+%% IPV4
+%% =========================
+U --> V{IPv4 MGMT Existe?}
+V -- Sim --> W[Define Primary IP]
+V -- Não --> V1[Cria IPv4 MGMT]
+V1 --> W
+
+W --> X[Fim]
+
 
 ## ⚙️ Pré-requisitos
  - Python 3.9+
