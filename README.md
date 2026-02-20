@@ -174,9 +174,23 @@ F --> F3[Models]
 F --> F4[Sites x Locations]
 F --> F5[Devices]
 F --> F6[Hostname x IP]
-
-D8 --> G[Dados Consolidados]
+ 
+D1 --> G[Dados Consolidados]
+D2 --> G[Dados Consolidados]
+D3 --> G[Dados Consolidados]
+D4 --> G[Dados Consolidados]
+D5 --> G[Dados Consolidados]
+D6 --> G[Dados Consolidados]
 D7 --> G[Dados Consolidados]
+D8 --> G[Dados Consolidados]
+F1 --> G[Dados Consolidados]
+F2 --> G[Dados Consolidados]
+F3 --> G[Dados Consolidados]
+F4 --> G[Dados Consolidados]
+F5 --> G[Dados Consolidados]
+F6 --> G[Dados Consolidados]
+
+
 F6 --> G
 
 G --> H[Fim da Coleta]
@@ -194,36 +208,37 @@ flowchart TD
 A[Início da Reconciliação] --> B[Comparar Estado Atual vs Estado Desejado]
 
 B --> C{Manufacturer Existe?}
-C -- Sim --> C1
+C -- Sim --> D
 C -- Não --> C1[Cria Manufacturer] --> D
 
 D --> E{Role Existe?}
-E -- Sim --> F1
+E -- Sim --> F
 E -- Não --> E1[Cria Role] --> F
 
 F --> G{Model Existe?}
-G -- Sim --> G1
+G -- Sim --> H
 G -- Não --> G1[Cria Model] --> H
 
 H --> I{Site Existe?}
-I -- Sim --> J1
+I -- Sim --> J
 I -- Não --> I1[Cria Site] --> J
 
 J --> K{Location Existe?}
-K -- Sim --> K1
+K -- Sim --> L
 K -- Não --> K1[Cria Location] --> L
 
 L --> M{Device Existe?}
-M -- Sim --> M1
+M -- Sim --> N
 M -- Não --> M1[Cria Device] --> N
 
 N --> O{Interface MGMT Existe?}
-O -- Sim --> O1
+O -- Sim --> P
 O -- Não --> O1[Cria Interface MGMT] --> P
 
 P --> Q{IPv4 Existe?}
 Q -- Sim --> R[Define Primary IP]
 Q -- Não --> Q1[Cria IPv4] --> R
+
 
 R --> S[Fim]
 ```
