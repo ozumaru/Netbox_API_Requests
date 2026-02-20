@@ -148,7 +148,7 @@ Responsável por:
 ## 🔄 Fluxo de Execução
 
 ```mermaid
-flowchart TD
+flowchart LR
 %% =========================
 %% INICIALIZAÇÃO
 %% =========================
