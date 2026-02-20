@@ -7,6 +7,18 @@
 ![Status](https://img.shields.io/badge/Status-Active-success)
 ![Automation](https://img.shields.io/badge/Network-Automation-green)
 
+<p align="center">
+  <a href="https://www.python.org/">
+    <img src="https://img.shields.io/badge/Python-3.9+-3776AB?style=flat-square&logo=python&logoColor=white" />
+  </a>
+  <a href="https://github.com/netbox-community/netbox">
+    <img src="https://img.shields.io/badge/NetBox-Official-ff6600?style=flat-square" />
+  </a>
+  <img src="https://img.shields.io/badge/Status-Active-success?style=flat-square" />
+  <img src="https://img.shields.io/badge/Network-Automation-green?style=flat-square" />
+</p>
+
+
 ---
 
 # 📌 Objetivo
@@ -75,7 +87,7 @@ O fluxo é dividido em 3 grandes camadas:
 
 O projeto é dividido em 4 camadas principais:
 
-## 🔌 1. Conexão API (`instance.py`)
+## 🔌 1. Conexão API [`instance.py`](https://github.com/ozumaru/Netbox_API_Requests/blob/main/Classes/instance.py) 
 
 Responsável por:
 
@@ -86,7 +98,7 @@ Responsável por:
 
 ---
 
-## 📊 2. Coleta de Dados (`get_data_netbox.py`)
+## 📊 2. Coleta de Dados [`get_data_netbox.py`](https://github.com/ozumaru/Netbox_API_Requests/blob/main/Classes/get_data_netbox.py)  
 
 Responsável por:
 
@@ -116,7 +128,7 @@ Ele extrai:
 E organiza tudo em estruturas prontas para validação.
 ---
 
-## ✅ 3. Validação e Criação (`validation.py`)
+## ✅ 3. Validação e Criação [`validation.py`](https://github.com/ozumaru/Netbox_API_Requests/blob/main/Classes/validation.py)  
 
 Essa é a inteligência do projeto.
 
@@ -136,7 +148,7 @@ O script é idempotente, ou seja:
 
     Ele não recria o que já existe.
 
-## 🚀 4. Orquestração (`main_netbox.py`)
+## 🚀 4. Orquestração [`main_netbox.py`](https://github.com/ozumaru/Netbox_API_Requests/main_netbox.py)  
 
 É o ponto de entrada.
 
