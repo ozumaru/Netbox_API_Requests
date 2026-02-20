@@ -31,15 +31,15 @@ Tudo isso é validado antes de criar qualquer coisa no NetBox.
 
 Valida e cria automaticamente (se necessário):
 
-- ✅ Manufacturers
-- ✅ Device Roles
-- ✅ Device Types (Models)
-- ✅ Sites
-- ✅ Locations
-- ✅ Devices
-- ✅ Interface de gerenciamento (mgmt)
-- ✅ IPv4 de gerenciamento
-- ✅ Define IP como Primary no device
+ - ✅ Manufacturers
+ - ✅ Device Roles
+ - ✅ Device Types (Models)
+ - ✅ Sites
+ - ✅ Locations
+ - ✅ Devices
+ - ✅ Interface de gerenciamento (mgmt)
+ - ✅ IPv4 de gerenciamento
+ - ✅ Define IP como Primary no device
 
 ---
 
@@ -79,10 +79,10 @@ O projeto é dividido em 4 camadas principais:
 
 Responsável por:
 
-- Requisições GET / POST / PATCH
-- Padronização de headers
-- Tratamento de exceções
-- Conversão do JSON da API em dicionários organizados
+ - Requisições GET / POST / PATCH
+ - Padronização de headers
+ - Tratamento de exceções
+ - Conversão do JSON da API em dicionários organizados
 
 ---
 
@@ -92,14 +92,14 @@ Responsável por:
 
 ### 🔹 A) Coletar dados existentes no NetBox
 
-- Manufacturers
-- Roles
-- Models
-- Sites
-- Locations
-- Devices
-- Interfaces
-- IPv4
+ - Manufacturers
+ - Roles
+ - Models
+ - Sites
+ - Locations
+ - Devices
+ - Interfaces
+ - IPv4
 
 ### 🔹 B) Ler e organizar o CSV
 O CSV db_devices.csv é carregado com pandas.
@@ -121,14 +121,14 @@ E organiza tudo em estruturas prontas para validação.
 Essa é a inteligência do projeto.
 
 Fluxo hierárquico obrigatório:
-    1. Manufacturers
-    2. Roles
-    3. Models
-    4. Sites
-    5. Locations
-    6. Devices
-    7. Interface mgmt
-    8. IPv4 mgmt
+ 1. Manufacturers
+ 2. Roles
+ 3. Models
+ 4. Sites
+ 5. Locations
+ 6. Devices
+ 7. Interface mgmt
+ 8. IPv4 mgmt
 
 Tudo é validado antes de criar.
 
@@ -141,9 +141,9 @@ O script é idempotente, ou seja:
 É o ponto de entrada.
 
 Responsável por:
-    - Carregar variáveis de ambiente
-    - Instanciar classes
-    - Executar validações na ordem correta
+ - Carregar variáveis de ambiente
+ - Instanciar classes
+ - Executar validações na ordem correta
 
 ## 🔄 Fluxo de Execução
 
