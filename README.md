@@ -146,6 +146,9 @@ Responsável por:
  - Executar validações na ordem correta
 
 ## 🔄 Fluxo de Execução
+## 📊 1️⃣ Fluxo — Coleta de Informações
+
+Mostra apenas a origem dos dados. 
 
 ```mermaid
 flowchart TD
@@ -153,82 +156,77 @@ flowchart TD
 A[Início] --> B[Carrega .env]
 B --> C[Instancia Classes]
 
-C --> D[Coleta dados do NetBox]
-D --> D1[Manufacturers/Roles/Models/Sites/Locations/Devices/Interfaces/IPv4]
+C --> D[Coleta Estado Atual - NetBox]
+D --> D1[Manufacturers]
+D --> D2[Roles]
+D --> D3[Models]
+D --> D4[Sites]
+D --> D5[Locations]
+D --> D6[Devices]
+D --> D7[Interfaces]
+D --> D8[IPv4]
 
 C --> E[Carrega CSV db_devices.csv]
-E --> F[Extrai Dados do Banco]
-F --> F1[Manufacturers/Roles/Models/Sites/Locations/Devices/Hostname + IP]
+E --> F[Extrai Estruturas do Banco]
+F --> F1[Manufacturers]
+F --> F2[Roles]
+F --> F3[Models]
+F --> F4[Sites x Locations]
+F --> F5[Devices]
+F --> F6[Hostname x IP]
 
-F --> G[Validação]
+D8 --> G[Dados Consolidados]
+F6 --> G
 
-%% =========================
-%% MANUFACTURERS
-%% =========================
-G --> H{Manufacturer Existe?}
-H -- Sim --> I[Próximo]
-H -- Não --> H1[Cria Manufacturer]
-H1 --> I
-
-%% =========================
-%% ROLES
-%% =========================
-I --> J{Role Existe?}
-J -- Sim --> K[Próximo]
-J -- Não --> J1[Cria Role]
-J1 --> K
-
-%% =========================
-%% MODELS
-%% =========================
-K --> L{Model Existe?}
-L -- Sim --> M[Próximo]
-L -- Não --> L1[Cria Model]
-L1 --> M
-
-%% =========================
-%% SITES
-%% =========================
-M --> N{Site Existe?}
-N -- Sim --> O[Próximo]
-N -- Não --> N1[Cria Site]
-N1 --> O
-
-%% =========================
-%% LOCATIONS
-%% =========================
-O --> P{Location Existe?}
-P -- Sim --> Q[Próximo]
-P -- Não --> P1[Cria Location]
-P1 --> Q
-
-%% =========================
-%% DEVICES
-%% =========================
-Q --> R{Device Existe?}
-R -- Sim --> S[Próximo]
-R -- Não --> R1[Cria Device]
-R1 --> S
-
-%% =========================
-%% INTERFACE MGMT
-%% =========================
-S --> T{Interface MGMT Existe?}
-T -- Sim --> U[Próximo]
-T -- Não --> T1[Cria Interface MGMT]
-T1 --> U
-
-%% =========================
-%% IPV4
-%% =========================
-U --> V{IPv4 MGMT Existe?}
-V -- Sim --> W[Define Primary IP]
-V -- Não --> V1[Cria IPv4 MGMT]
-V1 --> W
-
-W --> X[Fim]
+G --> H[Fim da Coleta]
 ```
 
+---
+
+# ⚙️ 2️⃣ Fluxo — Tratamento + Validação + Configuração
+
+Agora sim entra a parte inteligente do projeto.
+ 
+```mermaid
+flowchart TD
+
+A[Início da Reconciliação] --> B[Comparar Estado Atual vs Estado Desejado]
+
+B --> C{Manufacturer Existe?}
+C -- Sim --> D
+C -- Não --> C1[Cria Manufacturer] --> D
+
+D --> E{Role Existe?}
+E -- Sim --> F
+E -- Não --> E1[Cria Role] --> F
+
+F --> G{Model Existe?}
+G -- Sim --> H
+G -- Não --> G1[Cria Model] --> H
+
+H --> I{Site Existe?}
+I -- Sim --> J
+I -- Não --> I1[Cria Site] --> J
+
+J --> K{Location Existe?}
+K -- Sim --> L
+K -- Não --> K1[Cria Location] --> L
+
+L --> M{Device Existe?}
+M -- Sim --> N
+M -- Não --> M1[Cria Device] --> N
+
+N --> O{Interface MGMT Existe?}
+O -- Sim --> P
+O -- Não --> O1[Cria Interface MGMT] --> P
+
+P --> Q{IPv4 Existe?}
+Q -- Sim --> R[Define Primary IP]
+Q -- Não --> Q1[Cria IPv4] --> R
+
+R --> S[Fim]
+```
+---
 ## ⚙️ Pré-requisitos
  - Python 3.9+
  - NetBox acessível via API
