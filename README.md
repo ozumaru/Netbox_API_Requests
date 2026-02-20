@@ -148,44 +148,31 @@ Responsável por:
 ## 🔄 Fluxo de Execução
 
 ```mermaid
-flowchart LR
+flowchart TD
 
-%% =========================
-%% INICIALIZAÇÃO
-%% =========================
 A[Início] --> B[Carrega .env]
 B --> C[Instancia Classes]
 
-%% =========================
-%% COLETA E PREPARAÇÃO
-%% =========================
-C --> D[Coleta e Preparação de Dados]
+C --> D[Coleta dados do NetBox]
+D --> D1[Manufacturers/Roles/Models/Sites/Locations/Devices/Interfaces/IPv4]
 
-D --> D1[Coleta Estado Atual - NetBox]
-D --> D2[Carrega e Organiza CSV]
+C --> E[Carrega CSV db_devices.csv]
 
-%% =========================
-%% RECONCILIAÇÃO
-%% =========================
-D --> E[Reconciliação\n(Current State vs Desired State)]
+E --> F[Extrai Dados do Banco]
+F --> F1[Manufacturers/Roles/Models/Sites/Locations/Devices/Hostname + IP]
 
-%% =========================
-%% VALIDAÇÃO HIERÁRQUICA
-%% =========================
-E --> F[Valida Manufacturers]
-F --> G[Valida Roles]
-G --> H[Valida Models]
-H --> I[Valida Sites]
-I --> J[Valida Locations]
-J --> K[Valida Devices]
-K --> L[Valida Interface MGMT]
-L --> M[Valida IPv4 MGMT]
-M --> N[Define Primary IP]
+F --> G[Validação]
 
-%% =========================
-%% FINAL
-%% =========================
-N --> O[Fim]
+G --> H[Valida Manufacturers]
+H --> I[Valida Roles]
+I --> J[Valida Models]
+J --> K[Valida Sites]
+K --> L[Valida Locations]
+L --> M[Valida Devices]
+M --> N[Valida Interface MGMT]
+N --> O[Valida IPv4 MGMT]
+
+O --> P[Fim]
 ```
 
 ## ⚙️ Pré-requisitos
