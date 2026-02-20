@@ -44,6 +44,7 @@ Valida e cria automaticamente (se necessário):
 ---
 
 # 🏗️ Estrutura do Projeto
+```bash
 .
 ├── .env
 ├── main_netbox.py
@@ -53,6 +54,7 @@ Valida e cria automaticamente (se necessário):
 │   └── validation.py
 └── database/
     └── db_devices.csv
+```
 ---
 
 # 🧠 Arquitetura Geral
@@ -60,7 +62,7 @@ Valida e cria automaticamente (se necessário):
 O fluxo é dividido em 3 grandes camadas:
 
 | Camada                  | Arquivo                | Responsabilidade                                |
-|---------=---------------|------------------------|-------------------------------------------------|
+|        :---:            |        :---:           |                     :---:                      |
 | 🔌 Conexão API          | `instance.py`          | Faz requisições REST para o NetBox             |
 | 📊 Coleta e Tratamento  | `get_data_netbox.py`   | Lê CSV e organiza dados                        |
 | ✅ Validação            | `validation.py`        | Compara CSV vs NetBox e cria o que faltar      |
