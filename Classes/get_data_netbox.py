@@ -187,7 +187,7 @@ class data_netbox:
                     model = cisco_model.upper()
                     cisco.append(model)
 
-            elif "Fortigate" in data or "Fortinet" in data:
+            elif "Fortinet" in data:
                 model = f'{data.split()[-1]}'
                 fortinet.append(model)
  
