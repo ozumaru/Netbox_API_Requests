@@ -147,8 +147,7 @@ Responsável por:
 
 ## 🔄 Fluxo de Execução
 
-flowchart TD
-
+```mermaid
 flowchart TD
 
 A[Início] --> B[Carrega .env]
@@ -187,7 +186,7 @@ M --> N[Valida Interface MGMT]
 N --> O[Valida IPv4 MGMT]
 
 O --> P[Fim]
-
+```
 
 ## ⚙️ Pré-requisitos
  - Python 3.9+
