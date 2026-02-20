@@ -222,20 +222,20 @@ SP-DC-SWC-01,10.0.0.1/24,DATACENTER,SP,Cisco Catalyst 9300,Cisco,Switch,#FF5733,
 
 ## 🎯 Características Técnicas
 
-✔ Separação clara de responsabilidades
-✔ Hierarquia respeitada
-✔ Sincronização completa
-✔ Atualiza IP primário automaticamente
-✔ Estrutura modular
-✔ Fácil expansão
+ - ✔ Separação clara de responsabilidades
+ - ✔ Hierarquia respeitada
+ - ✔ Sincronização completa
+ - ✔ Atualiza IP primário automaticamente
+ - ✔ Estrutura modular
+ - ✔ Fácil expansão
 
 ## 🚧 Melhorias Futuras (Roadmap)
- Implementar paginação automática completa
- Implementar logging estruturado
- Criar modo Dry-Run
- Criar validação de inconsistência (IP em device errado)
- Implementar rollback
- Transformar em CLI tool
+ - Implementar paginação automática completa
+ - Implementar logging estruturado
+ - Criar modo Dry-Run
+ - Criar validação de inconsistência (IP em device errado)
+ - Implementar rollback
+ - Transformar em CLI tool
 
 ## 💡 Conceito Arquitetural
 
@@ -246,5 +246,5 @@ Esse projeto funciona como um:
 Ele compara estado desejado (CSV) com estado atual (NetBox) e converge o ambiente.
 
 ## 👨‍💻 Autor
-Desenvolvido por José Osmar Caitano
-Network Engineer | Automation | NetDevOps
+- Desenvolvido por José Osmar Caitano 
+- Network Engineer | Automation | NetDevOps
