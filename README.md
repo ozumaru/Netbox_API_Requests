@@ -149,6 +149,7 @@ Responsável por:
 
 ```mermaid
 flowchart LR
+
 %% =========================
 %% INICIALIZAÇÃO
 %% =========================
@@ -156,55 +157,35 @@ A[Início] --> B[Carrega .env]
 B --> C[Instancia Classes]
 
 %% =========================
-%% ESTADO ATUAL - NETBOX
+%% COLETA E PREPARAÇÃO
 %% =========================
-C --> D[Coleta Estado Atual - NetBox]
+C --> D[Coleta e Preparação de Dados]
 
-D --> D1[Manufacturers]
-D --> D2[Roles]
-D --> D3[Device Types]
-D --> D4[Sites]
-D --> D5[Locations]
-D --> D6[Devices]
-D --> D7[Interfaces]
-D --> D8[IPv4]
+D --> D1[Coleta Estado Atual - NetBox]
+D --> D2[Carrega e Organiza CSV]
 
 %% =========================
-%% ESTADO DESEJADO - CSV
+%% RECONCILIAÇÃO
 %% =========================
-C --> E[Carrega CSV db_devices.csv]
-E --> F[Organiza Estado Desejado]
-
-F --> F1[Manufacturers]
-F --> F2[Roles]
-F --> F3[Models]
-F --> F4[Sites x Locations]
-F --> F5[Devices]
-F --> F6[Hostname x IP]
-
-%% =========================
-%% MOTOR DE RECONCILIAÇÃO
-%% =========================
-F --> G[Reconciliação]
-D --> G
+D --> E[Reconciliação\n(Current State vs Desired State)]
 
 %% =========================
 %% VALIDAÇÃO HIERÁRQUICA
 %% =========================
-G --> H[Valida Manufacturers]
-H --> I[Valida Roles]
-I --> J[Valida Models]
-J --> K[Valida Sites]
-K --> L[Valida Locations]
-L --> M[Valida Devices]
-M --> N[Valida Interface MGMT]
-N --> O[Valida IPv4 MGMT]
-O --> P[Define Primary IP]
+E --> F[Valida Manufacturers]
+F --> G[Valida Roles]
+G --> H[Valida Models]
+H --> I[Valida Sites]
+I --> J[Valida Locations]
+J --> K[Valida Devices]
+K --> L[Valida Interface MGMT]
+L --> M[Valida IPv4 MGMT]
+M --> N[Define Primary IP]
 
 %% =========================
 %% FINAL
 %% =========================
-P --> Q[Fim]
+N --> O[Fim]
 ```
 
 ## ⚙️ Pré-requisitos
