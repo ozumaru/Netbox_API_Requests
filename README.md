@@ -149,33 +149,48 @@ Responsável por:
 
 ```mermaid
 flowchart TD
-
+%% =========================
+%% INICIALIZAÇÃO
+%% =========================
 A[Início] --> B[Carrega .env]
 B --> C[Instancia Classes]
 
-C --> D[Coleta dados do NetBox]
+%% =========================
+%% ESTADO ATUAL - NETBOX
+%% =========================
+C --> D[Coleta Estado Atual - NetBox]
+
 D --> D1[Manufacturers]
 D --> D2[Roles]
-D --> D3[Models]
+D --> D3[Device Types]
 D --> D4[Sites]
 D --> D5[Locations]
 D --> D6[Devices]
 D --> D7[Interfaces]
 D --> D8[IPv4]
 
+%% =========================
+%% ESTADO DESEJADO - CSV
+%% =========================
 C --> E[Carrega CSV db_devices.csv]
+E --> F[Organiza Estado Desejado]
 
-E --> F[Extrai Dados do Banco]
 F --> F1[Manufacturers]
 F --> F2[Roles]
 F --> F3[Models]
-F --> F4[Sites]
-F --> F5[Locations]
-F --> F6[Devices]
-F --> F7[Hostname + IP]
+F --> F4[Sites x Locations]
+F --> F5[Devices]
+F --> F6[Hostname x IP]
 
-F --> G[Validação]
+%% =========================
+%% MOTOR DE RECONCILIAÇÃO
+%% =========================
+F --> G[Reconciliação]
+D --> G
 
+%% =========================
+%% VALIDAÇÃO HIERÁRQUICA
+%% =========================
 G --> H[Valida Manufacturers]
 H --> I[Valida Roles]
 I --> J[Valida Models]
@@ -184,8 +199,12 @@ K --> L[Valida Locations]
 L --> M[Valida Devices]
 M --> N[Valida Interface MGMT]
 N --> O[Valida IPv4 MGMT]
+O --> P[Define Primary IP]
 
-O --> P[Fim]
+%% =========================
+%% FINAL
+%% =========================
+P --> Q[Fim]
 ```
 
 ## ⚙️ Pré-requisitos
