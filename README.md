@@ -190,7 +190,6 @@ F4 --> G[Dados Consolidados]
 F5 --> G[Dados Consolidados]
 F6 --> G[Dados Consolidados]
 
-
 F6 --> G
 
 G --> H[Fim da Coleta]
@@ -206,39 +205,30 @@ Agora sim entra a parte inteligente do projeto.
 flowchart TD
 
 A[Início da Reconciliação] --> B[Comparar Estado Atual vs Estado Desejado]
+B{Manufacturer Existe?}
+B -- Sim --> C{Role Existe?}
+B -- Não --> B1[Cria Manufacturer] --> C
 
-B --> C{Manufacturer Existe?}
-C -- Sim --> D
-C -- Não --> C1[Cria Manufacturer] --> D
+C -- Sim --> D{Model Existe?}
+C -- Não --> C1[Cria Role] --> D
 
-D --> E{Role Existe?}
-E -- Sim --> F
-E -- Não --> E1[Cria Role] --> F
+D -- Sim --> E{Site Existe?}
+D -- Não --> D1[Cria Model] --> E
 
-F --> G{Model Existe?}
-G -- Sim --> H
-G -- Não --> G1[Cria Model] --> H
+E -- Sim --> F{Location Existe?}
+E -- Não --> E1[Cria Site] --> F
 
-H --> I{Site Existe?}
-I -- Sim --> J
-I -- Não --> I1[Cria Site] --> J
+F -- Sim --> G{Device Existe?}
+F -- Não --> F1[Cria Location] --> G
 
-J --> K{Location Existe?}
-K -- Sim --> L
-K -- Não --> K1[Cria Location] --> L
+G -- Sim --> H{Interface MGMT Existe?}
+G -- Não --> G1[Cria Device] --> H
 
-L --> M{Device Existe?}
-M -- Sim --> N
-M -- Não --> M1[Cria Device] --> N
+H -- Sim --> I{IPv4 Existe?}
+H -- Não --> H1[Cria Interface MGMT] --> I
 
-N --> O{Interface MGMT Existe?}
-O -- Sim --> P
-O -- Não --> O1[Cria Interface MGMT] --> P
-
-P --> Q{IPv4 Existe?}
-Q -- Sim --> R[Define Primary IP]
-Q -- Não --> Q1[Cria IPv4] --> R
-
+I -- Sim --> J[Define Primary IP]
+I -- Não --> I1[Cria IPv4] --> J
 
 R --> S[Fim]
 ```
