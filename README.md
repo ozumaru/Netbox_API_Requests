@@ -1,18 +1,15 @@
-# 🚀 Sincronismo de Inventário - NetBox
+| ![Typing SVG](https://readme-typing-svg.herokuapp.com/?color=%2336BCF7&center=true&vCenter=true&width=700&lines=%F0%9F%9A%80+Sincronismo+de+Invent%C3%A1rio+-+NetBox;%F0%9F%94%81+Reconcilia%C3%A7%C3%A3o+Autom%C3%A1tica+de+Estado;CSV+%E2%9E%9C+NetBox+%E2%9E%9C+Consist%C3%AAncia+Total;%F0%9F%A4%96+Network+Automation+na+Pr%C3%A1tica) |
+|:---:|
+
 
 > Sincronização automática entre um banco de dados CSV e o NetBox, garantindo consistência completa do inventário.
-
-![Python](https://img.shields.io/badge/Python-3.9+-blue)
-![NetBox](https://img.shields.io/badge/NetBox-API-orange)
-![Status](https://img.shields.io/badge/Status-Active-success)
-![Automation](https://img.shields.io/badge/Network-Automation-green)
 
 <p align="center">
   <a href="https://www.python.org/">
     <img src="https://img.shields.io/badge/Python-3.9+-3776AB?style=flat-square&logo=python&logoColor=white" />
   </a>
   <a href="https://github.com/netbox-community/netbox">
-    <img src="https://img.shields.io/badge/NetBox-Official-ff6600?style=flat-square" />
+    <img src="https://img.shields.io/badge/NetBox-NB-ff6600?style=flat-square" />
   </a>
   <img src="https://img.shields.io/badge/Status-Active-success?style=flat-square" />
   <img src="https://img.shields.io/badge/Network-Automation-green?style=flat-square" />
