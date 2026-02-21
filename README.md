@@ -1,3 +1,8 @@
+
+<p align="center">
+  <p align="center"> <img src="https://github.com/ozumaru/Netbox_API_Requests/blob/main/netbox_python.png" width="500">
+</p>
+
 | ![Typing SVG](https://readme-typing-svg.herokuapp.com/?color=%2336BCF7&center=true&vCenter=true&width=700&lines=%F0%9F%9A%80+Sincronismo+de+Invent%C3%A1rio+-+NetBox;%F0%9F%94%81+Reconcilia%C3%A7%C3%A3o+Autom%C3%A1tica+de+Estado;CSV+%E2%9E%9C+NetBox+%E2%9E%9C+Consist%C3%AAncia+Total;%F0%9F%A4%96+Network+Automation+na+Pr%C3%A1tica) |
 |:---:|
 
@@ -13,10 +18,6 @@
 </p>
 
 ---
-<p align="center">
-  <p align="center"> <img src="https://github.com/ozumaru/Netbox_API_Requests/blob/main/netbox_python.png" width="700">
-</p>
-
 > Sincronização automática entre um banco de dados CSV e o NetBox, garantindo consistência completa do inventário.
 ---
 
