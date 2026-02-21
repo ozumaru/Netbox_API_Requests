@@ -14,7 +14,7 @@
 
 ---
 <p align="center">
-  <p align="center"> <img src="https://github.com/ozumaru/Netbox_API_Requests/netbox_python.png" width="700">
+  <p align="center"> <img src="https://github.com/ozumaru/Netbox_API_Requests/blob/main/netbox_python.png" width="700">
 </p>
 
 > Sincronização automática entre um banco de dados CSV e o NetBox, garantindo consistência completa do inventário.
