@@ -148,7 +148,7 @@ O script é idempotente, ou seja:
 
     Ele não recria o que já existe.
 
-## 🚀 4. Orquestração [`main_netbox.py`](https://github.com/ozumaru/Netbox_API_Requests/main_netbox.py)  
+## 🚀 4. Orquestração [`main_netbox.py`](https://github.com/ozumaru/Netbox_API_Requests/blob/main/main_netbox.py)  
 
 É o ponto de entrada.
 
